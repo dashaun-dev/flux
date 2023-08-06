@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: gateway-service
+  namespace: dashaun-dev
+spec:
+  template:
+    spec:
+      containers:
+        - image: dashaun/dev.dashaun.service.gateway:v0.0.6
