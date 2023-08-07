@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: authorization-service
+  namespace: dashaun-dev
+spec:
+  template:
+    spec:
+      containers:
+        - image: dashaun/dev.dashaun.service.authorization:v0.0.4
