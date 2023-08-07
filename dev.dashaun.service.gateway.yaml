@@ -5,6 +5,9 @@ metadata:
   namespace: dashaun-dev
 spec:
   template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
         - image: dashaun/dev.dashaun.service.gateway:v0.0.6
